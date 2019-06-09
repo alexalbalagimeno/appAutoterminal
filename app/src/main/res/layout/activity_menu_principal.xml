@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MenuPrincipal">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.05"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewAutoTerminal"
+        android:layout_width="250dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:background="@drawable/autoterminaliniciar" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonIngressarVehicle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button_blue"
+        android:onClick="onClickBotoIngressarVehicle"
+        android:text="@string/AddCar"
+        android:textColor="@drawable/button_text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonBaixaVehicle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button_blue"
+        android:onClick="onClickBotoBaixaVehicle"
+        android:text="@string/RemoveCar"
+        android:textColor="@drawable/button_text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonLocalitzarVehicle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button_blue"
+        android:onClick="onClickBotoLocalitzarVehicle"
+        android:text="@string/LocateCar"
+        android:textColor="@drawable/button_text" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonReportarIncidencia"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button_blue"
+        android:onClick="onClickBotoReportarIncidencia"
+        android:text="@string/ReportIncidence"
+        android:textColor="@drawable/button_text" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+</LinearLayout>

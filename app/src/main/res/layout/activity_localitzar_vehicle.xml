@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c3e9f5"
+    tools:context=".LocalitzarVehicle">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/eTBastidor"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_inputs_codis"
+            android:ems="10"
+            android:hint="@string/SerialNumber"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/buttonBuscar"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_blue"
+            android:onClick="onClickBuscar"
+            android:text="@string/Search"
+            android:textColor="@drawable/button_text" />
+
+        <Button
+            android:id="@+id/buttonFoto"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight=".2"
+            android:background="@drawable/round_button_blue"
+            android:onClick="onClickFoto"
+            android:text="@string/Scan"
+            android:textColor="@drawable/button_text" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewCoche"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight=".3"
+            app:srcCompat="@drawable/iconevehicle" />
+
+        <EditText
+            android:id="@+id/eTInformacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_inputs_codis"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:text="@string/CarInf"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight=".5"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/tVBastidor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/SerialNumber"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTBastidor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/round_inputs_codis"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tVColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Colour"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/tVModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Model"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/tVMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Brand"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tVCaract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Features"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTCaract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tVPlaça"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/NumberPlace"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tVPlanta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Floor"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTPlanta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tVEdifici"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/Flat"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTEdifici"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/tVDataEntrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/EntryDate"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTDataEntrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tVDataSortida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/DepartureDate"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <EditText
+                    android:id="@+id/eTDataSortida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_inputs_codis"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/buttonMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/round_button_blue"
+            android:onClick="onClickMapa"
+            android:text="@string/Map"
+            android:textColor="@drawable/button_text" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/buttonHistoric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_blue"
+            android:text="@string/Historial"
+            android:textColor="@drawable/button_text" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/buttonRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/round_button_blue"
+            android:text="@string/Route"
+            android:textColor="@drawable/button_text" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+
+</LinearLayout>

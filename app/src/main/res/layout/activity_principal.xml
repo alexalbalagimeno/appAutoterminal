@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Principal">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:background="@drawable/autoterminaliniciar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/LogIn"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/eTUsuari"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_inputs_autentica"
+        android:ems="10"
+        android:hint="@string/UsuInici"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_weight=".5" />
+
+    <EditText
+        android:id="@+id/eTPass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_inputs_autentica"
+        android:ems="10"
+        android:hint="@string/passInici"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button_blue"
+        android:onClick="onClickBotoEntra"
+        android:text="@string/Enter"
+        android:textColor="@drawable/button_text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:background="@android:color/white" />
+
+</LinearLayout>

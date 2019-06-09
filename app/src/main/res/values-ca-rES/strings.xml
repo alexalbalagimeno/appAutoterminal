@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">autoterminalemployee</string>
+    <string name="passInici">Contrasenya</string>
+    <string name="UsuInici">Usuari</string>
+    <string name="Enter">Entrar</string>
+    <string name="ForgetPass">Has oblidat la contrasenya?</string>
+    <string name="AddCar">Ingressar Vehicle</string>
+    <string name="LocateCar">Localitzar Vehicle</string>
+    <string name="ReportIncidence">Reportar incidència</string>
+    <string name="SerialNumber">Número de bastidor coche</string>
+    <string name="SerialNumber2">Número de dispositiu</string>
+    <string name="ConfirmAdd">Confirmar ingrés</string>
+    <string name="SuggestDelete">Petició Baixa</string>
+    <string name="Search">Buscar</string>
+    <string name="CarInf">Informació del vehicle</string>
+    <string name="Colour">Color</string>
+    <string name="Model">Model</string>
+    <string name="Brand">Marca</string>
+    <string name="Features">Característiques</string>
+    <string name="NumberPlace">Número de plaça</string>
+    <string name="Floor">Planta</string>
+    <string name="Flat">Edifici</string>
+    <string name="Map">Mapa</string>
+    <string name="Historial">Historial empleat</string>
+    <string name="Route">Ruta</string>
+    <string name="PrepareLogin">Preparant per autenticar</string>
+    <string name="PutNumber">Si us plau, posa número de bastidor</string>
+    <string name="OkNumber">Número posat</string>
+    <string name="RemoveCar">Baixa vehicle</string>
+    <string name="ConfirmRemove">Confirmar baixa</string>
+    <string name="DepartureDate">Data sortira</string>
+    <string name="EntryDate">Data entrada</string>
+    <string name="ErrorAutentication">Posa usuari i contrasenya correctament</string>
+    <string name="DeletedCar">Vehicle borrat</string>
+    <string name="UpdateFailed">Canvi no efectuat</string>
+    <string name="AddedCar">Vehicle ingressat</string>
+    <string name="Place">Plaça</string>
+    <string name="LogIn">Iniciar Sessió</string>
+    <string name="Row">Fila</string>
+    <string name="Column">Columna</string>
+    <string name="Scan">Scan</string>
+    <string name="IncorrectNumber">Vehicle no trobat en la base de dades</string>
+</resources>
